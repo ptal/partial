@@ -1,0 +1,18 @@
+[package]
+
+name = "partial"
+version = "0.1.0"
+authors = [ "Pierre Talbot <ptalbot@hyc.io>" ]
+
+description = "Optional monad with fake variant."
+repository = "https://github.com/ptal/partial"
+documentation = "https://docs.rs/partial/0.1.0"
+readme = "README.md"
+keywords = ["option", "monad", "compiler"]
+license = "Apache-2.0"
+
+[lib]
+
+name = "partial"
+path = "src/libpartial/lib.rs"
+crate_type = ["dylib"]
