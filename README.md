@@ -7,4 +7,4 @@
 
 Similar to Option<T> with an additional Fake variant for accumulating errors beyond the first one. For example, in compiler, if a code analysis failed, we wish to continue a little further to obtain more errors.
 
-Please consult the [documentation](https://docs.rs/partial/0.1.0).
+Please consult the [documentation](https://docs.rs/partial).

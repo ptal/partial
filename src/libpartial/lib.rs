@@ -85,6 +85,7 @@ impl<T> Partial<T>
 #[cfg(test)]
 mod test {
   use super::*;
+  use super::Partial::*;
 
   fn nothing_i32(_: i32) -> Partial<i32> {
     Nothing

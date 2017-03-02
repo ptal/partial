@@ -1,14 +1,15 @@
 [package]
 
 name = "partial"
-version = "0.1.2"
+version = "0.1.3"
 authors = [ "Pierre Talbot <ptalbot@hyc.io>" ]
 
 description = "Optional monad with fake variant."
 repository = "https://github.com/ptal/partial"
-documentation = "https://docs.rs/partial/0.1.0"
+documentation = "https://docs.rs/partial"
 readme = "README.md"
-keywords = ["option", "monad", "compiler"]
+keywords = ["result", "monad", "compiler"]
+categories = ["data-structures"]
 license = "Apache-2.0"
 
 [lib]
