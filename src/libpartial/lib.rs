@@ -18,6 +18,9 @@
 //!
 //! Use case: When compiling, an error in one function must be reported but should not prevent the compilation of a second function to detect more errors in one run. This intermediate state is represented by `Fake`.
 
+pub mod environment;
+
+pub use environment::*;
 use self::Partial::*;
 
 #[derive(Clone, PartialEq, PartialOrd, Eq, Ord, Debug)]

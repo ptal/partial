@@ -1,7 +1,7 @@
 [package]
 
 name = "partial"
-version = "0.1.3"
+version = "0.2.0"
 authors = [ "Pierre Talbot <ptalbot@hyc.io>" ]
 
 description = "Optional monad with fake variant."
@@ -16,3 +16,6 @@ license = "Apache-2.0"
 
 name = "partial"
 path = "src/libpartial/lib.rs"
+
+[badges]
+travis-ci = { repository = "ptal/partial" }
