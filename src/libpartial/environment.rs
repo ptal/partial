@@ -62,6 +62,14 @@ impl<T, U> Environment<T, U>
     self.data.unwrap_or_else(f)
   }
 
+  pub fn map<R, F: FnOnce(U) -> R>(self, f: F) -> Environment<T, R> {
+    match self.data {
+      Value(x) => Environment::value(self.env, f(x)),
+      Fake(x) => Environment::fake(self.env, f(x)),
+      Nothing => Environment::nothing(self.env)
+    }
+  }
+
   pub fn and_then<R, F: FnOnce(T, U) -> Environment<T, R>>(self, f: F) -> Environment<T, R> {
     match self.data {
       Value(x) => f(self.env, x),
